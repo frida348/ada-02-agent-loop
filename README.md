@@ -5,14 +5,14 @@
   estructurada ejecutar funciones externas predefinidas (como JSON) en lugar de limitarse a
   generar texto libre, permitiéndole interactuar directamente con el
   entorno.
-  ──────
+  
   ### 2. ¿Qué es una observation?
 
   Es la información o resultado que el entorno devuelve tras ejecutar una
   herramienta (por ejemplo el texto de un archivo). Esta respuesta se
   alimenta de vuelta al contexto del agente para que decida el siguiente
   paso.
-  ──────
+  
   ### 3. ¿Qué es el Agent Loop?
 
   Es el ciclo iterativo continuo compuesto por:
@@ -22,7 +22,7 @@
   En cada vuelta, el agente percibe el estado actual, razona sobre el
   objetivo, ejecuta una acción mediante herramientas y valida el resultado
   hasta satisfacer las condiciones de éxito o criterio de parada.
-  ──────
+ 
   ### 4. ¿Qué operaciones corresponden a read, write, edit y bash?
 
   • READ: Inspeccionar y leer el contenido de archivos existentes sin
@@ -33,7 +33,7 @@
   texto dentro de un archivo existente.
   • BASH: Ejecutar comandos en la consola del sistema operativo para
   interactuar con herramientas externas como pytest.
-  ──────
+
   ### 5. ¿Dónde intervino el agente?
 
   • En la inspección y diagnóstico autónomo de los archivos del
@@ -45,14 +45,14 @@
   la implementación de calculator.py:17-18, y la codificación de
   agent_loop.py.
   • En la verificación automática re-ejecutando la suite de tests.
-  ──────
+ 
   ### 6. ¿Dónde intervino el humano?
 
   • En la definición de metas, restricciones y prioridades (p. ej.
   delimitar no alterar tests, exigir el cambio mínimo, solicitar la nueva
   operación de módulo o pedir la representación formal del loop).
   • En la supervisión y aceptación de cada fase del trabajo.
-  ──────
+  
   ### 7. ¿Qué capacidad se perdería sin ejecución de comandos?
 
   Se perdería la verificación dinámica y empírica en tiempo real. El
